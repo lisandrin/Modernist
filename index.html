@@ -1,145 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Modernist</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modernist</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="media.css">
-  
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="logo"></div>
+        </div> 
 
-	<header class="header"> 
-		<div class="container">
-        	<div class="header_content">
-                <div class="logo" style="background-image: url('./imgs/logo.png');">
+        <div class="col-sm-7 nav-bar">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+               <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Full Width</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn dropdown-toggle" href="#" role="button" 
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: grey;">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="slider_content">
+    <div class="container-fluid">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-xl-6">
+                  <div class="text">
+                    <h2>Cursus penati saccum nulla.</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. 
+                      Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et 
+                      feugiat adipiscinia pellentum leo.
+                    </p> 
+                  </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 mrg">
+                <img src="https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="green" class="rounded-circle">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <div class="text">
+                  <h2>Cursus penati saccum nulla.</h2>
+                  <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. 
+                  Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et 
+                  feugiat adipiscinia pellentum leo.
+                  </p> 
                 </div>
-
-                <div class="nav_bar">
-                	<ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Full Width</a></li>
-                        <li><a href="#">Dropdown</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Gallery</a></li>
-                	</ul>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 mrg">
+                <img src="https://images.pexels.com/photos/3708717/pexels-photo-3708717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="green two" class="rounded-circle">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <div class="text">
+                  <h2>Cursus penati saccum nulla.</h2>
+                  <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. 
+                  Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et 
+                  feugiat adipiscinia pellentum leo.
+                  </p> 
                 </div>
-        	</div>
-      	</div>
- 	</header>
-
- 	<section class="slider_content">
-		<div class="container"> 
-      		<div class="slider_wrapper">
-      			<div class="text_content">
-          			<div class="text">
-          				<h1>Cursus Penati Saccum Nulla</h1>
-          				<p>Nullamlacus dui ipsum conseque lobrttis non euisque morbi penas dapibulum orna. Urnailtrices quis curabitur phasellemtesque congue magnis vestibulum quismodo nula et feuqiat adipiscinia pellentum leo</p>
-          				<button>Read More Here >></button>
-        			</div>
-        		</div>
-
-        		<div class="circle_content">
-         			 <div class="circle" style="background-image: url(./imgs/dog.png);">
-         			 </div>
-        		</div>
-      		</div>
-    	</div>
-	</section>
-
-	<section class="title_content">
-    	<div class="container">
-			<div class="title_section">
-      			<div class="serv">
-          			<div style="background-image: url(./imgs/doggy.jpg);"></div>
-          			<h1>service title</h1>
-          			<p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
-        		</div>
-        		<div class="serv">
-          			<div style="background-image: url(./imgs/doggy.jpg);"></div>
-          			<h1>service title</h1>
-          			<p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
-        		</div>
-        		<div class="serv">
-          			<div style="background-image: url(./imgs/doggy.jpg);"></div>
-          			<h1>service title</h1>
-          			<p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
-        		</div>
-        		<div class="serv">
-          			<div style="background-image: url(./imgs/doggy.jpg);"></div>
-          			<h1>service title</h1>
-          			<p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
-        		</div>
-      		</div>
-    	</div>
-	</section>
-
-	<section class="work_section">
-		<div class="container">
-			<div class="work_items">
-				<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-				<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-			<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-				<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-			<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-				<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-			<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-				<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-			<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-				<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-			<div class="work_item" style="background-image: url(./imgs/doggy.jpg);">
-			 	<div class="work-title"> LOREM IPSUM DOLOR</div>
-			</div>
-		</div>
-	</div>
-	</section>
-
-
-	<footer class="footer_content">
-    	<div class="container">
-			<div class="footer_sections"> 
-				<div class="blog">
-					<h3>From The Blog</h3>
-				  	<h5>Post Title</h5>
-				  	<p> Admin, Domanename.Com<br>Friday, 6th April 2020<br>vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit inteseque sed. Facilispede estibulum nulla orna nisl velit elit ac cras urna urnaretra lor urna neque sed quis orci nulla.</p>
-				  	<a  class="blog_link" href="#">Read More >></a>
-				</div>
-			<div class="link">
-				  <h3>Quick links</h3>
-        			<ul>
-          				<li>Lorem ipsum dolor sit</li>
-          				<li>Amet consectetur</li>
-          				<li>Praesent vel sem id</li>
-          				<li>Curabitur hendrerit est</li>
-          				<li>Aliquam eget erat nec sapien</li>
-          				<li>Cras id augue nunc</li>
-          				<li>Sed a nulla urna</li>
-        			</ul>
-			</div>
-			<div class="tweet">
-        		<h3>latest tweets</h3><br>
-        		<p id="tweet"><span>@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae dolorees 1 day ago</p>
-        		<p id="tweet"><span>@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae dolorees 1 day ago</p>
-      		</div>
-      		<div class="contact_us">
-				<h3>Contact Us</h3>
-				<input type="contact" placeholder="Name">
-      	  		<input type="contact" placeholder="Email Adress">
-      			<input type="contact" placeholder="Subject">
-      			<input type="contact" placeholder="Message">
-      			<button type="submit">SUBMIT</button>
-			</div>
-		</div>
-	</div>
-</footer> 
-
-</body>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 mrg">
+                <img src="https://images.pexels.com/photos/4151510/pexels-photo-4151510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="green three" class="rounded-circle">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="title_content">
+      <div class="container">
+        <div class="row">
+          <div class="row row-cols-md-4">
+            <div class="col sm-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Service Title</h5>
+                <p class="card-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                  ueta habitur augue</p>
+              </div>
+            </div>
+            </div>
+            <div class="col sm-4">
+              <div class="card">
+                <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Service Title</h5>
+                  <p class="card-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                  ueta habitur augue</p>
+                </div>
+              </div>
+            </div>
+          <div class="col sm-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Service Title</h5>
+                <p class="card-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                  ueta habitur augue</p>
+              </div>
+            </div>
+          </div>
+          <div class="col sm-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Service Title</h5>
+                <p class="card-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                  ueta habitur augue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="work_section">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="greenman">
+              <div class="work-title col-sm-12">LOREM IPSUM DOLOR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <footer class="footer_content">
+      <div class="container">
+        <div class="card-deck row-cols-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-white">From The Blog</h5>
+              <h6 class="text-success">Post Title</h6>
+              <p class="text-secondary"><span class="text-success" style="font-size:10px;">Admin,</span><span style="font-size: 10px;"> Domanename.Com</span><br/> <span style="font-size: 10px;">Friday, 6th April 2020</span><br/>vestibulumaccumsan
+              egestibulum eu justo convallis augue estas aenean elit inteseque
+              sed. Facilispede estibulum nulla orna nisl velit elit ac cras urna
+              urnaretra lor urna neque sed quis orci nulla.
+              </p>
+            <a class="blog_link" href="#">Read More >></a>
+            </div>
+          </div>
+          <div class="card col-sm-3">
+            <div class="card-body">
+              <h5 class="text-white">Quick links</h5>
+              <ul>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Amet consectetur</li>
+                <li>Praesent vel sem id</li>
+                <li>Curabitur hendrerit est</li>
+                <li>Aliquam eget erat nec sapien</li>
+                <li>Cras id augue nunc</li>
+                <li>Sed a nulla urna</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-sm-3">
+            <div class="card-body">
+              <h5 class="text-white">latest tweets</h5>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="text-secondary"> 
+                    <span style="color:#76c38f;">@namehere</span> Justoid nonummy laoreet phasellent
+                    penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem
+                    justo a non tellus laoremut vitae dolorees 1 day ago
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="text-secondary">
+                    <span style="color:#76c38f;">@namehere</span> Justoid nonummy laoreet phasellent
+                    penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem
+                    justo a non tellus laoremut vitae dolorees 1 day ago
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-sm-3">
+            <div class="card-body">
+              <h5 class="text-white">Contact Us</h5>
+              <form>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Email Adress">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control mess" id="inputPassword3" placeholder="Message">
+                  </div>
+                </div>
+              </form>
+              <button type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

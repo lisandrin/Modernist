@@ -1,0 +1,235 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-color: #290000;
+  border-top: 5px solid #76c38f;
+  width: 100%;
+  min-height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: inline-block;
+  width: 200px;
+  min-height: 50px;
+  margin-top: 38px;
+  background-image: url(./imgs/logo.png);
+}
+
+header .nav-bar {
+  padding-top: 35px;
+}
+
+header .nav-bar li:hover {
+  background-color: #76c38f;
+  border-radius: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .nav-bar a {
+  color: whitesmoke;
+  outline: none;
+}
+
+header .nav-bar a:hover {
+  color: #fff;
+}
+
+.slider_content {
+  width: 100%;
+  background-color: #660000;
+  padding-bottom: 40px;
+}
+
+.slider_content #demo {
+  height: 30%;
+}
+
+.slider_content #demo .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slider_content #demo .row:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slider_content #demo .row .text {
+  padding: 8em 0em 0em 10em;
+  width: 80%;
+  height: auto;
+  background-color: none;
+}
+
+.slider_content #demo .row .text h2 {
+  color: whitesmoke;
+  font-size: 45px;
+}
+
+.slider_content #demo .row .text p {
+  color: #979797;
+  font-size: 14px;
+}
+
+.slider_content #demo .row .mrg img {
+  border: 29px solid #6b6b6b;
+  width: 450px;
+  height: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.title_content {
+  width: 100%;
+  background-color: #660000;
+  padding-bottom: 30px;
+}
+
+.title_content .card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.title_content .card img {
+  width: 60%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.title_content .card:hover {
+  background-color: #76c38f;
+}
+
+.title_content .card:hover > .card-body h5 {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.title_content .card:hover > .card-body p {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.work_section {
+  width: 100%;
+  background-color: #660000;
+}
+
+.work_section .card {
+  border: 5px solid #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.work_section .card:hover {
+  border: 5px solid #76c38f;
+  border-radius: 0px;
+}
+
+.work_section .card:hover > .work-title {
+  bottom: -40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.work_section .card .work-title {
+  width: 100%;
+  height: 13%;
+  background-color: #151515;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer_content {
+  min-height: 500px;
+  width: 100%;
+  background-color: #303030;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_content .card {
+  background-color: #303030;
+}
+
+.footer_content .card .card-body ul {
+  list-style: none;
+}
+
+.footer_content .card .card-body ul li {
+  border-bottom: 1px solid #404040;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #76c38f;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.footer_content .card .card-body ul li:hover {
+  color: #abe9be;
+}
+
+.footer_content .card input[type="contact"] {
+  border: 1px solid #f4f9f4;
+  border-radius: 30px;
+  display: inline-block;
+  width: 200px;
+  height: 37px;
+  background-color: none;
+}
+
+.footer_content .card button {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #76c38f;
+  border: 1px solid #76c38f;
+  border-radius: 10px;
+  height: 35px;
+  width: 75px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.footer_content .card button:hover {
+  background-color: #429b5f;
+  border: 1px solid #429b5f;
+}
+
+.footer_content .card .mess {
+  width: 100%;
+  height: 150px;
+}
+/*# sourceMappingURL=main.css.map */
